@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<!-- Define the character set used -->
+<meta charset="utf-8">
+<!-- Define keywords for search engines -->
+<meta name="keywords" content="html">
+<!-- Define a description of the webpage -->
+<meta name="description" content="HTML Documentation">
+<!-- Define the author of a page -->
+<meta name="Author" content="Charlotte Soeurng">
+<!-- Define width -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Noel's Orbit</title>
+    
+<!-- for the small icon thing at the tab -->
+<link rel="icon" type="image/png" href="https://i.ibb.co/xXM7Mvg/Logo-Dark-Background-modified.png"/>
+
+<style>
+    * {margin: 0; padding: 0; box-sizing: border-box}
+    body 
+        {background-color: #000000;
+        text-align: center;
+        font-family: helvetica}
+    
+    /* the basic things */
+    h1
+        {color: forestgreen;
+        font-size: 20px;}
+    h2 
+        {color: forestgreen;
+        font-size: 500%;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto}
+    h3
+        {color: forestgreen;
+        font-size: 40px;
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto}
+    p
+        {color: darkkhaki;
+        font-size: 18px;
+        font-family: baskerville;
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: left}
+    img 
+        {display: block;
+        margin-left: auto;
+        margin-right:auto}
+    ul, ol
+        {color: darkkhaki;
+        font-family: baskerville;
+        font-size: 18px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 70%;
+        text-align: left}
+    table
+        {width: 90%;
+        margin-left: auto;
+        margin-right: auto;}
+    th, td
+        {padding: 10px;
+        color: darkkhaki;
+        text-align: left;}
+    
+    th {font-size: 18px; font-family: helvetica; background-color: darkred}
+    td {font-size: 18px; font-family: baskerville; background-color: darkslategray}
+    
+    /* for the colors section */
+    .colors
+        {padding: 10px;
+        border-collapse: collapse;
+        text-align: center;
+        width: 25%}
+    
+    /* for changing texts to red */
+    span {color: darkred}
+    
+    /* for spanning in tables */
+    .spanintable {color: forestgreen}
+    
+    /* padding for the heads, paragraphs, tables, and lists */
+    h1, h2, h3, h4, p, ul, ol, table {padding: 20px}
+    
+    /* for the nav bar in html */
+    nav
+        {background-color: black;
+        text-align: center;
+        height: 58.5px}
+    nav ul
+        {font-family: helvetica;
+        list-style-type: none;
+        color: darkred;
+        font-weight: bold;
+        font-size: 17px;
+        margin: 0;
+        padding: 0;
+        width: 100%}
+    nav ul li
+        {float: right;
+        margin: 0;
+        padding: 20px 0px;
+        text-align: center}
+    nav ul li a
+        {text-decoration: none;
+        color: darkred;
+        padding: 20px 71.16px;
+        background-color: black;
+        margin: 0}
+    nav ul li a:hover
+        {background-color: forestgreen;
+        color: black}
+    nav ul li a.active
+        {background-color: darkred;
+        color: darkkhaki}
+    
+    /* for the nav pic thing */
+    .container 
+        {position: relative;
+        text-align: left;
+        color: forestgreen}
+    .topnav
+        {background-color: darkred;
+        position: absolute;
+        padding: 20px;
+        top: 0px;
+        left: 0px;}
+    .topnav a
+        {color: darkkhaki;
+        text-align: center;
+        font-size: 100%;
+        padding: 20px;
+        text-decoration: none;
+        font-weight: bold}
+    .topnav a:hover
+        {background-color: forestgreen;
+        color: black}
+    .topnav a.active
+        {background-color: darkkhaki;
+        color: darkred}
+    .textinpic {background-color: darkred; font-size: 100%; position: absolute; bottom: 5%; left: 25px; width: 50%; border: 5px solid forestgreen}
+    .textinpic p {width: 100%}
+    .title
+        {position: absolute;
+        top: 40%;
+        bottom: 60%;
+        right: 5%;
+        font-size: 90px}
+    
+    /* for audio */
+    audio {background-color: white; border-radius: 10px;}
+    
+    /* layout thing */
+    header
+        {background-color: darkred;
+        padding: 20px;
+        text-align: center;
+        font-size: 20px;
+        color: darkkhaki;
+        font-weight: bold;}
+    .inlayout
+        {float: left;
+        background-color: darkslategray;
+        height: 150px;
+        width: 30%;
+        padding: 20px 50px}
+    .inlayout ul
+        {list-style-type: disc;
+        text-decoration: none;
+        font-family: helvetica;
+        color: darkkhaki;
+        padding: 0px 20px;}
+    .inlayout ul li
+        {float: none;
+        text-align: left;
+        padding: 5px;
+        margin: auto;}
+    article
+        {float: left;
+        padding: 20px 50px;
+        width: 70%;
+        background: darkkhaki;
+        height: 150px}
+    article p 
+        {font-size: 150%; font-family: helvetica; font-weight: bold; text-align: center; color: black}
+    footer
+        {background-color: white;
+        padding: 20px;
+        text-align: center;
+        width: 90%;
+        margin: auto;
+        font-size: 20px;
+        color: black;
+        font-weight: bold;}
+    section:after 
+        {content: "";
+        display: table;
+        clear: both;}
+</style>
+</head>
+    
+<body>
+    
+<!-- beginning of the yellow row at the top -->
+    
+<table style="width: 100%; margin-left: auto; margin-right: auto; border-collapse: collapse; height: 80px">
+    <tr>
+        <td style="background-color: darkkhaki; margin-left: auto; margin-right: auto; border: 2px solid darkkhaki; width: 5%">
+            <a href="index.html" style="margin: 0; padding: 0">
+            <img src="https://i.ibb.co/YN2LRHX/Logo-Black.png" alt="Logo" style="width: 70px; border-radius: 35px; float: left;"></a>
+        </td>
+        <td style="background-color: darkkhaki; margin-left: auto; margin-right: auto; border: 2px solid darkkhaki; width: 25%">
+            <a href="index.html" style="; margin: 0; padding: 0; text-decoration: none"><h1 style="padding: 0; margin: 0; font-family: helvetica; text-align: left;">Noel's Orbit</h1></a>
+        </td>
+        <td style="width: 70%; border: 2px solid darkkhaki; background-color: darkkhaki; font-size: 90%; color: forestgreen; text-align: right; font-family: helvetica">
+            HTML Documentation
+        </td>
+    </tr>
+</table>
+    
+<!-- end of the yellow row at the top -->
+    
+<!-- beginning of the top navigation bar -->
+
+<div class="container">
+    <img src="https://i.ibb.co/bLysg0Y/Computers-II-Cropped.jpg" alt="Image" style="width: 100%;">
+    <div class="topnav">
+        <a href="index.html">Home</a>
+        <a class="active" href="#html">HTML</a>
+        <a href="css.html">CSS</a>
+        <a href="contact.html">Contact</a>
+        <a href="about.html">About</a>
+    </div>
+    <div class="textinpic">
+        <p>The HyperText Markup Language or HTML is the standard markup language for documents designed to be displayed in a web browser. It can be assisted by technologies such as Cascading Style Sheets and scripting languages such as JavaScript.</p>
+    </div>
+    <div class="title" title="Hyper Text Markup Language"><b>HTML</b></div>
+</div>
+    
+<!-- end of the top navigation bar -->
+
+<!-- beginning of the yellow bar below the pic -->
+    
+<div>
+    <nav>
+        <ul>
+            <li><a href="media.html" style="border-left: 2px solid darkred">HTML Media</a></li>
+            <li><a class="active" href="#form" style="border-left: 2px solid darkred">HTML Form</a></li>
+            <li><a href="basics.html" style="border-left: 2px solid darkred">HTML Basics</a></li>
+            <li><a href="introduction.html" style="border-left: 2px solid darkred">Introduction</a></li>
+        </ul>
+    </nav>
+</div>
+    
+<!-- end of the yellow bar below the pic -->
+    
+<br><br>
+    
+<h3>Form Attributes</h3>
+    
+<p>Most frequently used form attributes:</p>
+    
+<table>
+    <tr>
+        <th>Attribute</th>
+        <th>Description</th>
+    </tr>
+    <tr>
+        <td>action</td>
+        <td>Defines the action to be performed when the form is submitted</td>
+    </tr>
+    <tr>
+        <td>method</td>
+        <td>Specifies how to send form-data</td>
+    </tr>
+    <tr>
+        <td>target</td>
+        <td>Specifies the target window or frame where the result of the script will be displayed</td>
+    </tr>
+    <tr>
+        <td>autocomplete</td>
+        <td>Specifies whether a form should have autocomplete on or off</td>
+    </tr>
+</table>
+    
+<h3>The &lt;form&gt; Element</h3>
+    
+<p>The <span>&lt;form&gt;</span> element is a container for different types of elements, such as: text fields, checkboxes, submit buttons, etc. You put the <span>&lt;form&gt;</span> tags at the beginning and the end of the form element.</p>
+    
+<h3>The &lt;input&gt; Element</h3>
+    
+<ul>
+    <li>The <span>&lt;input&gt;</span> element is the most used form element.</li>
+    <li>An <span>&lt;input&gt;</span> element can be displayed in many ways, depending on the <span>type</span> attribute.</li>
+</ul>
+    
+<p>Examples:</p>
+    
+<table>
+    <tr>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+    <tr>
+        <td><span class="spanintable">&lt;input type="text"&gt;</span></td>
+        <td>Displays a text input field</td>
+    </tr>
+    <tr>
+        <td><span class="spanintable">&lt;input type="radio"&gt;</span></td>
+        <td>Displays a radio button (for selecting one of many choices)</td>
+    </tr>
+    <tr>
+        <td><span class="spanintable">&lt;input type="checkbox"&gt;</span></td>
+        <td>Displays a checkbox (for selecting zero or more of many choices)</td>
+    </tr>
+    <tr>
+        <td><span class="spanintable">&lt;input type="submit"&gt;</span></td>
+        <td>Displays a submit button (for submitting the form)</td>
+    </tr>
+    <tr>
+        <td><span class="spanintable">&lt;input type="button"&gt;</span></td>
+        <td>Displays a clickable button</td>
+    </tr>
+</table>
+    
+<h3>Text Fields</h3>
+    
+<p>The <span>&lt;input type="text"&gt;</span> defines a single-line input field for text input.</p>
+    
+<p>Example:</p>
+    
+<table>
+    <tr>
+        <th>Code</th>
+        <th>Text</th>
+    </tr>
+    <tr>
+        <td>
+            <span class="spanintable">&lt;form&gt;</span>
+            <br><span class="spanintable">&lt;label for="name" style="color: darkkhaki"&gt;</span>Name:<span class="spanintable">&lt;/label&gt;</span>
+            <br><span class="spanintable">&lt;input type="text" id="name" name="name" value="name"&gt;</span>
+            <br><span class="spanintable">&lt;/form&gt;</span>
+        </td>
+        <td>
+            <form>
+    <label for="name" style="color: darkkhaki">Name:</label>
+<input type="text" id="name" name="name" value="some name">
+</form>
+        </td>
+    </tr>
+</table>
+    
+<br>
+    
+<p style="text-align: center; color: forestgreen">Now go to <a href="media.html" style="color: darkred">Media</a> for tutorials on how to add audio and video files to web pages.</p>
+    
+<br><br>

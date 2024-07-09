@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<!-- Define the character set used -->
+<meta charset="utf-8">
+<!-- Define keywords for search engines -->
+<meta name="keywords" content="html">
+<!-- Define a description of the webpage -->
+<meta name="description" content="HTML Documentation">
+<!-- Define the author of a page -->
+<meta name="Author" content="Charlotte Soeurng">
+<!-- Define width -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Noel's Orbit</title>
+    
+<!-- for the small icon thing at the tab -->
+<link rel="icon" type="image/png" href="https://i.ibb.co/xXM7Mvg/Logo-Dark-Background-modified.png"/>
+
+<style>
+    * {margin: 0; padding: 0; box-sizing: border-box}
+    body 
+        {background-color: #000000;
+        text-align: center;
+        font-family: helvetica}
+    
+    /* the basic things */
+    h1
+        {color: forestgreen;
+        font-size: 20px;}
+    h2 
+        {color: forestgreen;
+        font-size: 500%;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto}
+    h3
+        {color: forestgreen;
+        font-size: 40px;
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto}
+    p
+        {color: darkkhaki;
+        font-size: 18px;
+        font-family: baskerville;
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: left}
+    img 
+        {display: block;
+        margin-left: auto;
+        margin-right:auto}
+    ul, ol
+        {color: darkkhaki;
+        font-family: baskerville;
+        font-size: 18px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 70%;
+        text-align: left}
+    table
+        {width: 90%;
+        margin-left: auto;
+        margin-right: auto;}
+    th, td
+        {padding: 10px;
+        color: darkkhaki;
+        text-align: left;}
+    
+    th {font-size: 18px; font-family: helvetica; background-color: darkred}
+    td {font-size: 18px; font-family: baskerville; background-color: darkslategray}
+    
+    /* for the colors section */
+    .colors
+        {padding: 10px;
+        border-collapse: collapse;
+        text-align: center;
+        width: 25%}
+    
+    /* for changing texts to red */
+    span {color: darkred}
+    
+    /* for spanning in tables */
+    .spanintable {color: forestgreen}
+    
+    /* padding for the heads, paragraphs, tables, and lists */
+    h1, h2, h3, h4, p, ul, ol, table {padding: 20px}
+    
+    /* for the nav bar in html */
+    nav
+        {background-color: black;
+        text-align: center;
+        height: 58.5px}
+    nav ul
+        {font-family: helvetica;
+        list-style-type: none;
+        color: darkred;
+        font-weight: bold;
+        font-size: 17px;
+        margin: 0;
+        padding: 0;
+        width: 100%}
+    nav ul li
+        {float: right;
+        margin: 0;
+        padding: 20px 0px;
+        text-align: center}
+    nav ul li a
+        {text-decoration: none;
+        color: darkred;
+        padding: 20px 71.16px;
+        background-color: black;
+        margin: 0}
+    nav ul li a:hover
+        {background-color: forestgreen;
+        color: black}
+    nav ul li a.active
+        {background-color: darkred;
+        color: darkkhaki}
+    
+    /* for the nav pic thing */
+    .container 
+        {position: relative;
+        text-align: left;
+        color: forestgreen}
+    .topnav
+        {background-color: darkred;
+        position: absolute;
+        padding: 20px;
+        top: 0px;
+        left: 0px;}
+    .topnav a
+        {color: darkkhaki;
+        text-align: center;
+        font-size: 100%;
+        padding: 20px;
+        text-decoration: none;
+        font-weight: bold}
+    .topnav a:hover
+        {background-color: forestgreen;
+        color: black}
+    .topnav a.active
+        {background-color: darkkhaki;
+        color: darkred}
+    .textinpic {background-color: darkred; font-size: 100%; position: absolute; bottom: 5%; left: 25px; width: 50%; border: 5px solid forestgreen}
+    .textinpic p {width: 100%}
+    .title
+        {position: absolute;
+        top: 40%;
+        bottom: 60%;
+        right: 5%;
+        font-size: 90px}
+    
+    /* for audio */
+    audio {background-color: white; border-radius: 10px;}
+    
+    /* layout thing */
+    header
+        {background-color: darkred;
+        padding: 20px;
+        text-align: center;
+        font-size: 20px;
+        color: darkkhaki;
+        font-weight: bold;}
+    .inlayout
+        {float: left;
+        background-color: darkslategray;
+        height: 150px;
+        width: 30%;
+        padding: 20px 50px}
+    .inlayout ul
+        {list-style-type: disc;
+        text-decoration: none;
+        font-family: helvetica;
+        color: darkkhaki;
+        padding: 0px 20px;}
+    .inlayout ul li
+        {float: none;
+        text-align: left;
+        padding: 5px;
+        margin: auto;}
+    article
+        {float: left;
+        padding: 20px 50px;
+        width: 70%;
+        background: darkkhaki;
+        height: 150px}
+    article p 
+        {font-size: 150%; font-family: helvetica; font-weight: bold; text-align: center; color: black}
+    footer
+        {background-color: white;
+        padding: 20px;
+        text-align: center;
+        width: 90%;
+        margin: auto;
+        font-size: 20px;
+        color: black;
+        font-weight: bold;}
+    section:after 
+        {content: "";
+        display: table;
+        clear: both;}
+</style>
+</head>
+    
+<body>
+    
+<!-- beginning of the yellow row at the top -->
+    
+<table style="width: 100%; margin-left: auto; margin-right: auto; border-collapse: collapse; height: 80px">
+    <tr>
+        <td style="background-color: darkkhaki; margin-left: auto; margin-right: auto; border: 2px solid darkkhaki; width: 5%">
+            <a href="index.html" style="margin: 0; padding: 0">
+            <img src="https://i.ibb.co/YN2LRHX/Logo-Black.png" alt="Logo" style="width: 70px; border-radius: 35px; float: left;"></a>
+        </td>
+        <td style="background-color: darkkhaki; margin-left: auto; margin-right: auto; border: 2px solid darkkhaki; width: 25%">
+            <a href="index.html" style="; margin: 0; padding: 0; text-decoration: none"><h1 style="padding: 0; margin: 0; font-family: helvetica; text-align: left;">Noel's Orbit</h1></a>
+        </td>
+        <td style="width: 70%; border: 2px solid darkkhaki; background-color: darkkhaki; font-size: 90%; color: forestgreen; text-align: right; font-family: helvetica">
+            HTML Documentation
+        </td>
+    </tr>
+</table>
+    
+<!-- end of the yellow row at the top -->
+    
+<!-- beginning of the top navigation bar -->
+
+<div class="container">
+    <img src="https://i.ibb.co/bLysg0Y/Computers-II-Cropped.jpg" alt="Image" style="width: 100%;">
+    <div class="topnav">
+        <a href="index.html">Home</a>
+        <a class="active" href="#html">HTML</a>
+        <a href="css.html">CSS</a>
+        <a href="contact.html">Contact</a>
+        <a href="about.html">About</a>
+    </div>
+    <div class="textinpic">
+        <p>The HyperText Markup Language or HTML is the standard markup language for documents designed to be displayed in a web browser. It can be assisted by technologies such as Cascading Style Sheets and scripting languages such as JavaScript.</p>
+    </div>
+    <div class="title" title="Hyper Text Markup Language"><b>HTML</b></div>
+</div>
+    
+<!-- end of the top navigation bar -->
+
+<!-- beginning of the nav bar below the pic -->
+    
+<div>
+    <nav>
+        <ul>
+            <li><a href="media.html" style="border-left: 2px solid darkred">HTML Media</a></li>
+            <li><a href="form.html" style="border-left: 2px solid darkred">HTML Form</a></li>
+            <li><a href="basics.html" style="border-left: 2px solid darkred">HTML Basics</a></li>
+            <li><a class="active" href="#introduction" style="border-left: 2px solid darkred">Introduction</a></li>
+        </ul>
+    </nav>
+</div>
+    
+<!-- end of the nav bar below the pic -->
+
+<br><br><br>
+    
+<h3>What is HTML?</h3>
+
+<ul>
+    <li>HTML stands for Hyper Text Markup Language</li>
+    <li>HTML is the standard markup language for creating web pages</li>
+    <li>HTML describes the structure of a Web page</li>
+    <li>HTML consists of a series of elements</li>
+    <li>HTML elements tell the browser how to display the content</li>
+    <li>HTML elements label pieces of content such as <q>this is a heading</q>, <q>this is a paragraph</q>, <q>this is a link</q>, etc.</li>
+</ul>
+    
+<p>Simple HTML document:</p>
+    
+    <table>
+        <tr>
+            <th>Code</th>
+            <th>Text</th>
+        </tr>
+        <tr>
+            <td>
+                <span class="spanintable">&lt;!DOCTYPE html&gt;</span>
+                <br><span class="spanintable">&lt;html&gt;</span>
+                <br><span class="spanintable">&lt;head&gt;</span>
+                    <br><span class="spanintable">&lt;title&gt;</span>Some Title<span class="spanintable">&lt;/title&gt;</span>
+                <br><span class="spanintable">&lt;/head&gt;</span>
+                <br><span class="spanintable">&lt;body&gt;</span>
+                <br><br><span class="spanintable">&lt;h1&gt;</span>Some Heading<span class="spanintable">&lt;/h1&gt;</span>
+                <br><span class="spanintable">&lt;p&gt;</span>Some Paragraph<span class="spanintable">&lt;/p&gt;</span>
+                <br><br><span class="spanintable">&lt;/body&gt;</span>
+                <br><span class="spanintable">&lt;/html&gt;</span>
+            </td>
+            <td>
+                <p style="margin: 0; padding: 0; font-size: 150%"><b>Some Heading</b></p>
+                <br>Some Paragraph
+            </td>
+        </tr>
+    </table>
+    
+<p>Code explained:</p>
+    
+<ul>
+    <li><span>&lt;!DOCTYPE html&gt;</span> indicates that the document is HTML.</li>
+    <li><span>&lt;html&gt;</span> is the root of an HTML page.</li>
+    <li><span>&lt;head&gt;</span> contains metadata information  about the webpage.</li>
+    <li><span>&lt;title&gt;</span> indicated the title of the webpage. It is displayed in the page's tab.</li>
+    <li><span>&lt;body&gt;</span> defines a document's body.</li>
+    <li><span>&lt;h1&gt;</span> defines a document's heading.</li>
+    <li><span>&lt;p&gt;</span> defines a document's paragraph.</li>
+</ul>
+    
+<p>In the code above, there are tags and elements.</p>
+    
+<uL>
+    <li>The text in the <span>&lt;</span> and <span>&gt;</span> symbols (including the symbols themselves) are called a <span>"tag"</span>. To function properly, most tags have opening tags and end tags. Openning tags don't have the <span>/</span> symbol but end tags do.</li>
+    <li>Everything from an <span>opening tag</span> to an <span>end tag</span> (incuding the tags themselves) is called an <span>"element"</span>.</li>
+</uL>
+    
+<br><br>
+    
+    <p style="text-align: center; color: forestgreen">Now that you get an understanding of what HTML is, go to <a href="basics.html" style="color: darkred">Basics</a> for more tutorials.</p>
+    
+<br><br>
+    
+</body>
+</html>
